@@ -1,0 +1,22 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "- Help - Status, FireStatus - Extinguish - GIF options, (Dog, cat, kitty, kitten, puppy, puppers) - Quote recording - Server stats - Bot stats",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrbHouseOnFire/discordBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrbHouseOnFire/discordBot/issues"
+  },
+  "homepage": "https://github.com/BrbHouseOnFire/discordBot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
