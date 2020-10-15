@@ -4,3 +4,6 @@
 - Status, FireStatus
 - Extinguish
 - GIF options, (Dog, cat, kitty, kitten, puppy, puppers)
+- Quote recording
+- Server stats
+- Bot stats
