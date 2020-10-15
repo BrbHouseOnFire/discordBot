@@ -8,8 +8,15 @@ client.on('ready', () => {
  
 const p = config.prefix;
 client.on('message', msg => {
+  // check for associated prefix + ignore bot messages
+  if (!msg.content.startsWith(p) || msg.author.bot) {
+    return;
+  }
+  else interpreter(msg);
+});
 
-  if (!msg.content.startsWith(p) || msg.author.bot) return;
+let interpreter = (msg) => {
+
 
   // console.log(msg);
   console.log("--------------------------------------")
@@ -24,17 +31,19 @@ client.on('message', msg => {
     msg.channel.send("Why would I ever want to do that?");
   } else
 
-
+  if (m(msg, "text").startsWith(p + "who are you")) {
+    msg.channel.send(`Heyo! I'm ${client.user.tag}. I'm BrbHouseOnFire's personal nightmare! When I'm not setting a new room of his on fire, I distract myself here on discord with gifs and memes. If you're bored, you can ask for my help by starting your question with: "?"`);
+  } else
 
 
 
   if (m(msg, "text").startsWith(p + "who am i")) {
     msg.channel.send(`You are ${m(msg, 'user').username} obviously. Who did you expect you would be?`);
   } else
-  if (m(msg, "text").startsWith(p + "who did this")) {
+  if (m(msg, "text").startsWith(p + "who did")) {
     msg.channel.send(`${m(msg, 'user').username} did it!`);
   } else
-  if (m(msg, "text").startsWith(p + "who done this")) {
+  if (m(msg, "text").startsWith(p + "who done")) {
     msg.channel.send(`${m(msg, 'user').username} done it!`);
   } else
 
@@ -45,7 +54,7 @@ client.on('message', msg => {
 
   return;
 
-});
+}
 
 // function for breaking down the message object returned from discord.
 let m = (fullMessage, indentifier) => {
