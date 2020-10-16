@@ -1,5 +1,5 @@
 # Administrative Discord Server Bot
-## Commands to implement
+## Commands to Implement
 - Administrative
   - Help
   - Status, FireStatus
@@ -17,6 +17,9 @@
   - Bot stats
   - Magic 8 ball
   - 
+## Structural Changes to Implement
+- Modular breakout of commands for classification purposes
+- 
 
 ## Implemented:
 - Administrative
