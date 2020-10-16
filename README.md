@@ -21,7 +21,7 @@
 - Modular breakout of commands for classification purposes
 - 
 
-## Implemented:
+## Implemented Commands:
 - Administrative
   - Unhelpful Help Placeholder.
 - Entertainment
