@@ -7,16 +7,17 @@
   - Kick/Ban
   - Add permission template
   - Mute/Deafen
-  - 
-- Entertainment
-  - GIF options, (Dog, cat, kitty, kitten, puppy, puppers)
-  - youtube search
-  - imgur random viral
-  - Quote recording
   - Server stats
   - Bot stats
+  - 
+- Entertainment
+  - youtube search
+  - imgur random viral
   - Magic 8 ball
-  - wat
+  - Among Us Sus/Not
+  - GIF options, (Dog, cat, kitty, kitten, puppy, puppers)
+  - Quote recording
+  - wat interjection
   - non-command help interjection
 ## Structural Changes to Implement
 - Modular breakout of commands for classification purposes
