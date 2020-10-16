@@ -32,6 +32,6 @@
 
 ### Additional implemented features/notes:
 - Case-sensitivity
-- 
+- Ignore other bot queries
 ### Known bugs:
 - 
