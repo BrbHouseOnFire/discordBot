@@ -16,7 +16,8 @@
   - Server stats
   - Bot stats
   - Magic 8 ball
-  - 
+  - wat
+  - non-command help interjection
 ## Structural Changes to Implement
 - Modular breakout of commands for classification purposes
 - 
