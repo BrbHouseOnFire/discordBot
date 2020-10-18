@@ -36,4 +36,4 @@
 - Case-sensitivity
 - Ignore other bot queries
 ### Known bugs:
-- 
+- Extinguish command toLowercase
