@@ -21,7 +21,7 @@
   - non-command help interjection
 ## Structural Changes to Implement
 - Modular breakout of commands for classification purposes
-- 
+- Limit command responses to specific channels. Change command channel response to other channels based on content.
 
 ## Implemented Commands:
 - Administrative
