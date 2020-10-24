@@ -27,8 +27,22 @@ let interpreter = (msg) => {
     msg.channel.send("Help is arriving soon. In the meantime, enjoy watching the flames dance.");
   } else
 
-  if (m(msg, "text").startsWith(p + "Extinguish")) {
+  if (m(msg, "text").startsWith(p + "extinguish")) {
     msg.channel.send("Why would I ever want to do that?");
+  } else
+   
+  if (m(msg, "text").startsWith(p + "firestatus")) {
+   
+   let r = Math.floor(Math.random() * 3);
+   if (r === 0) {
+    msg.channel.send("The fire is BLAZING.");
+   } else
+   if (r === 1) {
+    msg.channel.send("The fire is currently a light smoulder.");
+   } else
+   if (r === 2) {
+    msg.channel.send("What fire? I didn't set any fires! It was blue player! And I saw him vent!");
+   }
   } else
 
   if (m(msg, "text").startsWith(p + "who are you")) {
