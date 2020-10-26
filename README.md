@@ -2,7 +2,7 @@
 ## Commands to Implement
 - Administrative
   - Help
-  - Status
+  - Status - track time online, number of commands received, and by whom.
   - Extinguish for owner.
   - Kick/Ban
   - Add permission template
@@ -12,6 +12,7 @@
   - 
 - Entertainment
   - youtube search
+  - set fire
   - imgur random viral
   - Magic 8 ball
   - Among Us Sus/Not
