@@ -2,7 +2,7 @@
 ## Commands to Implement
 - Administrative
   - Help
-  - Status, FireStatus
+  - Status
   - Extinguish for owner.
   - Kick/Ban
   - Add permission template
@@ -27,6 +27,7 @@
 - Administrative
   - Unhelpful Help Placeholder.
 - Entertainment
+  - Fire Status
   - Extinguish for non-owner.
   - Who am I?
   - Who did this?
