@@ -31,7 +31,7 @@ let interpreter = (msg) => {
     msg.channel.send("Why would I ever want to do that?");
   } else
    
-  if (m(msg, "text").startsWith(p + "firestatus")) {
+  if (m(msg, "text").startsWith(p + "firestatus") || m(msg, "text").startsWith(p + "fire status")) {
    
    let r = Math.floor(Math.random() * 3);
    if (r === 0) {
