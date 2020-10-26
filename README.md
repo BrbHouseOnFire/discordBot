@@ -2,13 +2,12 @@
 ## Commands to Implement
 - Administrative
   - Help
-  - Status - track time online, number of commands received, and by whom.
+  - Bot Status/stats - track time online, number of commands received, and by whom.
   - Extinguish for owner.
   - Kick/Ban
-  - Add permission template
+  - Add/remove permission template(s)
   - Mute/Deafen
-  - Server stats
-  - Bot stats
+  - Server/Channel stats
   - 
 - Entertainment
   - youtube search
