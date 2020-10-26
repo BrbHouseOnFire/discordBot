@@ -35,7 +35,7 @@
   - Who are you?
 
 ### Additional implemented features/notes:
-- Case-sensitivity
-- Ignore other bot queries
+- Filter out queries and messages from other bots.
+- Case-sensitivity for text commands.
 ### Known bugs:
-- Extinguish command toLowercase
+- 
