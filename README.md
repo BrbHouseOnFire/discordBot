@@ -3,7 +3,6 @@
 - Administrative
   - Help
   - Bot Status/stats - track time online, number of commands received, and by whom.
-  - Extinguish for owner.
   - Kick/Ban
   - Add/remove permission template(s)
   - Mute/Deafen
@@ -11,12 +10,13 @@
   - 
 - Entertainment
   - youtube search
-  - set fire
   - imgur random viral
+  - Quote recording
+  - set fire
+  - Extinguish for owner.
   - Magic 8 ball
   - Among Us Sus/Not
   - GIF options, (Dog, cat, kitty, kitten, puppy, puppers)
-  - Quote recording
   - wat interjection
   - non-command help interjection
 ## Structural Changes to Implement
