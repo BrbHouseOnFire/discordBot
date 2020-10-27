@@ -36,5 +36,5 @@
 ### Additional implemented features/notes:
 - Filter out queries and messages from other bots.
 - Case-sensitivity for text commands.
-### Known bugs:
-- 
+### Known issues/fixes/enhancements to make:
+- Trim space(s) from the beginning of commands-post prefix
