@@ -16,6 +16,7 @@
   - Extinguish for owner.
   - Magic 8 ball
   - Among Us Sus/Not
+  - MTheShark current dating status
   - GIF options, (Dog, cat, kitty, kitten, puppy, puppers)
   - wat interjection
   - non-command help interjection
