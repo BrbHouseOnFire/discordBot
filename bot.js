@@ -74,8 +74,22 @@ let interpreter = (msg) => {
 let m = (fullMessage, indentifier) => {
   // pull message content
   if (indentifier === 'text') {
-    console.log(fullMessage.content);
-    return fullMessage.content.toLowerCase();
+    let c = fullMessage.content;
+    console.log(c);
+    c = c.toLowerCase();
+    let isAdjusted = false;
+    // if character 2 is a space, strip it off
+    while (!isAdjusted) {
+      if (c.substr(0,1) != "? ") {
+        isAdjusted = true;
+      } 
+      else {
+        if (c.substr(0,1) === "? ") {
+          c = "?" + c.substr(2);
+        }
+      }
+    }
+    return c;
   } 
   else
   // pull user info
