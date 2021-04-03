@@ -14,9 +14,7 @@
   - Quote recording
   - set fire
   - Extinguish for owner.
-  - Magic 8 ball
   - Among Us Sus/Not
-  - MTheShark current dating status
   - GIF options, (Dog, cat, kitty, kitten, puppy, puppers)
   - wat interjection
   - non-command help interjection
@@ -28,11 +26,13 @@
 - Administrative
   - Unhelpful Help Placeholder.
 - Entertainment
+  - Magic 8 ball
   - Fire Status
   - Extinguish for non-owner.
   - Who am I?
   - Who did this?
   - Who are you?
+  - MTheShark current dating status
 
 ### Additional implemented features/notes:
 - Filter out queries and messages from other bots.
