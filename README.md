@@ -40,3 +40,10 @@
 - Case-sensitivity for text commands.
 - Trim space(s) from the beginning of commands-post prefix
 ### Known issues/fixes/enhancements to make:
+
+### Resources:
+- https://discord.js.org/#/docs/main/stable/class/Client
+- https://discordjs.guide/event-handling/#individual-event-files
+- https://leovoel.github.io/embed-visualizer/
+- https://gist.github.com/smiley/78c1c2a57d17a179a978a1438b389710
+- https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-
