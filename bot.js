@@ -11,7 +11,7 @@ client.on('ready', () => {
 
 
 
-
+  // -------------------------- DEBUGGING ----------------------------
   if (debug === true) {
     let debugValues = [];
     // client.channels.cache.get('469990643788414976').send('> I am Online');
@@ -36,6 +36,17 @@ client.on('message', msg => {
   // check for associated prefix + ignore bot messages
   if (!msg.content.startsWith(p) || msg.author.bot) {
     // ---------------------------- WAT interjection ----------------------------
+    if (m(msg, "text").startsWith("wat") && !msg.author.bot) {
+      const r = Math.floor(Math.random() * 5);
+      const answers = [
+          'https://tenor.com/view/what-wat-wat-lady-confused-huh-gif-8314795',
+          'https://tenor.com/view/wat-wut-what-lolwut-gif-4850067',
+          'https://tenor.com/view/wat-grandma-gif-11867504',
+          'https://tenor.com/view/astro-wat-gif-19170395',
+          'https://tenor.com/view/skeletor-wat-what-gif-18497036',
+      ];
+      msg.channel.send(answers[r]);
+    } else
 
     // ---------------------------- HELP interjection ---------------------------- 
     if (m(msg, "text").startsWith("help") && !msg.author.bot) {
@@ -105,7 +116,7 @@ let interpreter = (msg) => {
   // ---------------------------- Among Us ---------------------------- 
   // ---------------------------- GIF Options ---------------------------- 
   if (m(msg, "text").startsWith(p + "gif")) {
-    msg.channel.send('https://tenor.com/view/genshin-impact-genshin-impact-diluc-diluc-gif-19486007');
+    msg.channel.send('https://tenor.com/view/skeletor-wat-what-gif-18497036');
   } else
   
   // ---------------------------- Marvin the Shark ---------------------------- 
