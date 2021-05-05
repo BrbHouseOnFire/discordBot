@@ -2,22 +2,45 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config/config.json');
 const magic8 = require('./commands/magic8');
-
+const fs = require('fs');
+const debug = false;
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+
+
+
+
+
+  if (debug === true) {
+    let debugValues = [];
+    // client.channels.cache.get('469990643788414976').send('> I am Online');
+    // client.channels.cache.find(c => c.name === '').send('');
+    const channelCache = new Map(client.channels.cache);
+    channelCache.forEach((v, k) => {
+      debugValues.push(`{Channel id: ${k},Channel name: ${v.name}}`)
+    });
+  
+  
+    
+    fs.writeFile("./config/log.json", JSON.stringify(debugValues), function (err) {
+      if (err) return console.log(err);
+      console.log("> Logged");
+    });
+  }
 });
+
  
 const p = config.prefix;
 client.on('message', msg => {
   // check for associated prefix + ignore bot messages
   if (!msg.content.startsWith(p) || msg.author.bot) {
-    // ---------------------------- WAT interjection ---------------------------- 
+    // ---------------------------- WAT interjection ----------------------------
+
     // ---------------------------- HELP interjection ---------------------------- 
     if (m(msg, "text").startsWith("help") && !msg.author.bot) {
       console.log(m(msg, 'user'));
-      msg.channel.send(`Heyo ${m(msg, 'user').username}! I'm ${client.user.tag}.`);
-      msg.channel.send(`Help is arriving soon. In the meantime, enjoy watching the flames dance.`);
+      msg.channel.send(`>>> Heyo ${m(msg, 'user').username}! I'm ${client.user.username}.\r\nHelp is arriving soon. In the meantime, enjoy watching the flames dance.`);
       return;
     } else
 
@@ -27,9 +50,6 @@ client.on('message', msg => {
 });
 
 let interpreter = (msg) => {
-
-
-  // console.log(msg);
   console.log("--------------------------------------")
   console.log("new content (command): " + msg.content);
 
@@ -57,10 +77,10 @@ let interpreter = (msg) => {
 
   //  ---------------------------- WHO ---------------------------- 
   if (m(msg, "text").startsWith(p + "who are you")) {
-    msg.channel.send(`\`\`\`Heyo! I'm ${client.user.tag}. I'm BrbHouseOnFire's personal nightmare! When I'm not setting a new room of his on fire, I distract myself here on discord with gifs and memes. If you're bored, you can ask for my help by starting your question with: "?"`);
+    msg.channel.send(`>>> Heyo! I'm ${client.user.tag}. I'm BrbHouseOnFire's personal nightmare! When I'm not setting a new room of his on fire, I distract myself here on discord with gifs and memes. If you're bored, you can ask for my help by starting your question with: "?"`);
   } else
   if (m(msg, "text").startsWith(p + "who am i")) {
-    msg.channel.send(`\`\`\`You are ${m(msg, 'user').username} obviously. Who did you expect you would be?`);
+    msg.channel.send(`>>> You are ${m(msg, 'user').username} obviously. Who did you expect you would be?`);
   } else
   if (m(msg, "text").startsWith(p + "who did")) {
     msg.channel.send(`> ${m(msg, 'user').username} did it!`);
@@ -95,9 +115,7 @@ let interpreter = (msg) => {
   m(msg, "text").startsWith(p + "who's marvin") ||
   m(msg, "text").startsWith(p + "who is marvin")
   ){
-    msg.channel.send(`\`\`\`Marvin the Shark is currently dating:
-    
-    CRAZY`);
+    msg.channel.send(`>>> Marvin the Shark is currently dating:\r\n\r\n    CRAZY`);
   } else
 
   

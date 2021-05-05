@@ -22,6 +22,6 @@ const magic8 = () => {
         'Yes – definitely.',
         'You may rely on it.',
     ];
-    return `> Magic 8 Ball: ${answers[r]}`;
+    return `> Magic 8 Ball says: ${answers[r]}`;
 };
 exports.magic8 = magic8;
