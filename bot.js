@@ -35,38 +35,38 @@ let interpreter = (msg) => {
 
   // ---------------------------- HELP ----------------------------
   if (m(msg, "text").startsWith(p + "help")) {
-    msg.channel.send("Help is arriving soon. In the meantime, enjoy watching the flames dance.");
+    msg.channel.send("> Help is arriving soon. In the meantime, enjoy watching the flames dance.");
   } else
 
   // ---------------------------- FIRE ---------------------------- 
   if (m(msg, "text").startsWith(p + "extinguish")) {
-    msg.channel.send("Why would I ever want to do that?");
+    msg.channel.send("> Why would I ever want to do that?");
   } else
   if (m(msg, "text").startsWith(p + "firestatus") || m(msg, "text").startsWith(p + "fire status")) {
    let r = Math.floor(Math.random() * 3);
    if (r === 0) {
-    msg.channel.send("The fire is BLAZING.");
+    msg.channel.send("> The fire is BLAZING.");
    } else
    if (r === 1) {
-    msg.channel.send("The fire is currently a light smoulder.");
+    msg.channel.send("> The fire is currently a light smoulder.");
    } else
    if (r === 2) {
-    msg.channel.send("What fire? I didn't set any fires! It was blue player! And I saw him vent!");
+    msg.channel.send("> What fire? I didn't set any fires! It was blue player! And I saw him vent!");
    }
   } else
 
   //  ---------------------------- WHO ---------------------------- 
   if (m(msg, "text").startsWith(p + "who are you")) {
-    msg.channel.send(`Heyo! I'm ${client.user.tag}. I'm BrbHouseOnFire's personal nightmare! When I'm not setting a new room of his on fire, I distract myself here on discord with gifs and memes. If you're bored, you can ask for my help by starting your question with: "?"`);
+    msg.channel.send(`\`\`\`Heyo! I'm ${client.user.tag}. I'm BrbHouseOnFire's personal nightmare! When I'm not setting a new room of his on fire, I distract myself here on discord with gifs and memes. If you're bored, you can ask for my help by starting your question with: "?"`);
   } else
   if (m(msg, "text").startsWith(p + "who am i")) {
-    msg.channel.send(`You are ${m(msg, 'user').username} obviously. Who did you expect you would be?`);
+    msg.channel.send(`\`\`\`You are ${m(msg, 'user').username} obviously. Who did you expect you would be?`);
   } else
   if (m(msg, "text").startsWith(p + "who did")) {
-    msg.channel.send(`${m(msg, 'user').username} did it!`);
+    msg.channel.send(`> ${m(msg, 'user').username} did it!`);
   } else
   if (m(msg, "text").startsWith(p + "who done")) {
-    msg.channel.send(`${m(msg, 'user').username} done it!`);
+    msg.channel.send(`> ${m(msg, 'user').username} done it!`);
   } else
 
   
@@ -84,6 +84,10 @@ let interpreter = (msg) => {
   // ---------------------------- Quotes ---------------------------- 
   // ---------------------------- Among Us ---------------------------- 
   // ---------------------------- GIF Options ---------------------------- 
+  if (m(msg, "text").startsWith(p + "gif")) {
+    msg.channel.send('https://tenor.com/view/genshin-impact-genshin-impact-diluc-diluc-gif-19486007');
+  } else
+  
   // ---------------------------- Marvin the Shark ---------------------------- 
   if (m(msg, "text").startsWith(p + "marvin") || 
   m(msg, "text").startsWith(p + "what's marvin") || 
@@ -91,7 +95,7 @@ let interpreter = (msg) => {
   m(msg, "text").startsWith(p + "who's marvin") ||
   m(msg, "text").startsWith(p + "who is marvin")
   ){
-    msg.channel.send(`Marvin the Shark is currently dating:
+    msg.channel.send(`\`\`\`Marvin the Shark is currently dating:
     
     CRAZY`);
   } else
