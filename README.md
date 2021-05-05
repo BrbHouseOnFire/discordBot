@@ -2,6 +2,7 @@
 ## Commands to Implement
 - Administrative
   - Help
+  - Live / Streaming announcements
   - Bot Status/stats - track time online, number of commands received, and by whom.
   - Kick/Ban
   - Add/remove permission template(s)
