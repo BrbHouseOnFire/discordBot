@@ -17,7 +17,6 @@
   - Extinguish for owner.
   - Among Us Sus/Not
   - GIF options, (Dog, cat, kitty, kitten, puppy, puppers)
-  - wat interjection
   - non-command help interjection
 ## Structural Changes to Implement
 - Modular breakout of commands for classification purposes
@@ -34,6 +33,7 @@
   - Who am I?
   - Who did this?
   - Who are you?
+  - wat interjection
   - MTheShark current dating status
 
 ### Additional implemented features/notes:
