@@ -12,6 +12,7 @@
 - Entertainment
   - youtube search
   - imgur random viral
+  - reddit search
   - Quote recording
   - set fire
   - Extinguish for owner.
