@@ -19,6 +19,7 @@
   - Among Us Sus/Not
   - GIF options, (Dog, cat, kitty, kitten, puppy, puppers)
   - non-command help interjection
+  - laugh interjection: lol/ha/haha, etc
 ## Structural Changes to Implement
 - Breakout message interpreter into separate file
 - Modular breakout of commands for classification purposes
