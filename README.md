@@ -52,3 +52,5 @@
 - https://gist.github.com/smiley/78c1c2a57d17a179a978a1438b389710
 - https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-
 - https://www.alphr.com/discord-change-text-color/
+- https://www.youtube.com/watch?v=o6E1xFiyfHw
+- https://github.com/Malexion/Rhythm-Bot
