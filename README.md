@@ -9,6 +9,12 @@
   - Mute/Deafen
   - Server/Channel stats
   - 
+  - Kickoff Airhorn for specific scenarios.
+    - User joins the server: /among Report
+    - Something concerning? /among Role
+    - Get everyone's attention: /gavel
+    - Hooray: /birthday confetti
+  - 
 - Entertainment
   - youtube search
   - imgur random viral
